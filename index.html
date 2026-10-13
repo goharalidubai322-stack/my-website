@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Best Smile Building Materials Trading LLC — hardware and building materials in Dubai, UAE.">
+  <title>Best Smile | Building Materials Trading LLC</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="topbar">
+    <span>📍 Dubai, UAE</span><span>◷ Sat–Thu · 8:00 AM–8:00 PM</span><span>✉ info@yourcompany.com</span>
+    <div class="top-social" aria-label="Social media">
+      <a href="#" aria-label="Facebook">f</a><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="TikTok">♪</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="WhatsApp">◉</a>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <a class="brand" href="#home" aria-label="Best Smile home">
+      <span class="brand-mark">⌂</span>
+      <span><strong>BEST <b>SMILE</b></strong><small>BUILDING MATERIALS TRADING LLC</small><em>Building Your Dream With Quality</em></span>
+    </a>
+    <form class="search" id="searchForm">
+      <input id="searchInput" type="search" placeholder="Search for products..." aria-label="Search products">
+      <select id="categoryFilter" aria-label="Filter category">
+        <option value="all">All Categories</option>
+        <option>Power Tools</option><option>Hand Tools</option><option>Hardware</option>
+        <option>Electrical Items</option><option>Plumbing Materials</option><option>Building Materials</option><option>Paints</option>
+      </select>
+      <button type="submit" aria-label="Search">⌕</button>
+    </form>
+    <a class="whatsapp-head" id="headerWhatsApp" href="#" target="_blank" rel="noopener">🟢 <span><small>Chat on WhatsApp</small><strong>+971563119985</strong></span></a>
+  </header>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <button class="mobile-menu" id="mobileMenu" aria-expanded="false">☰ Menu</button>
+    <div class="nav-links" id="navLinks">
+      <a class="active" href="#home">Home</a><a href="#products">Products</a><a href="#categories">Categories</a>
+      <a href="#about">About Us</a><a href="#team">Our Team</a><a href="#location">Location</a><a href="#contact">Contact Us</a>
+    </div>
+    <a class="quote-btn" href="#contact">GET A QUOTE ↗</a>
+  </nav>
+
+  <div class="marquee" aria-label="Popular products">
+    <div class="marquee-track">
+      <span>✦ NEW ARRIVALS</span><span>Power Tools</span><span>•</span><span>Hand Tools</span><span>•</span><span>Electrical Items</span><span>•</span><span>Plumbing Materials</span><span>•</span><span>Safety Items</span><span>•</span><span>Cement & Blocks</span><span>•</span><span>Paints</span><span>•</span><span>AND MUCH MORE</span>
+      <span>✦ NEW ARRIVALS</span><span>Power Tools</span><span>•</span><span>Hand Tools</span><span>•</span><span>Electrical Items</span><span>•</span><span>Plumbing Materials</span><span>•</span><span>Safety Items</span><span>•</span><span>Cement & Blocks</span><span>•</span><span>Paints</span><span>•</span><span>AND MUCH MORE</span>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">PREMIUM QUALITY&nbsp; | &nbsp;BEST PRICE</p>
+        <h1>ALL YOUR<br><span>BUILDING NEEDS</span><br>IN ONE PLACE</h1>
+        <p>Reliable hardware and building materials for your next project. Quality products, helpful service, and easy ordering.</p>
+        <div class="hero-actions">
+          <a class="btn btn-green" id="heroWhatsApp" href="#" target="_blank" rel="noopener">◉ ORDER ON WHATSAPP</a>
+          <a class="btn btn-outline" href="#products">EXPLORE PRODUCTS →</a>
+        </div>
+        <div class="hero-benefits"><span>✦ Quality Products</span><span>◆ Affordable Prices</span><span>▣ Fast Delivery*</span><span>☏ Customer Support</span></div>
+      </div>
+      <div class="hero-tools" aria-hidden="true"><span>🔩</span><span>🛠️</span><span>🔧</span><span>🧰</span></div>
+    </section>
+
+    <section class="section categories-section" id="categories">
+      <div class="section-heading"><p class="eyebrow">EXPLORE OUR RANGE</p><h2>SHOP BY <span>CATEGORY</span></h2><p>Find the tools and materials you need.</p></div>
+      <div class="category-grid">
+        <button class="category-card" data-category="Power Tools"><span class="category-icon">🛠️</span><strong>POWER TOOLS</strong><small>Drills, grinders & more</small></button>
+        <button class="category-card" data-category="Hand Tools"><span class="category-icon">🔨</span><strong>HAND TOOLS</strong><small>Everyday work essentials</small></button>
+        <button class="category-card" data-category="Electrical Items"><span class="category-icon">💡</span><strong>ELECTRICAL ITEMS</strong><small>Electrical supplies</small></button>
+        <button class="category-card" data-category="Plumbing Materials"><span class="category-icon">🚰</span><strong>PLUMBING</strong><small>Pipes, fittings & more</small></button>
+        <button class="category-card" data-category="Building Materials"><span class="category-icon">🧱</span><strong>BUILDING MATERIALS</strong><small>Construction essentials</small></button>
+        <button class="category-card" data-category="Paints"><span class="category-icon">🪣</span><strong>PAINTS & ACCESSORIES</strong><small>Paints and rollers</small></button>
+      </div>
+    </section>
+
+    <section class="section products-section" id="products">
+      <div class="section-heading"><p class="eyebrow">QUALITY FOR EVERY PROJECT</p><h2>OUR <span>TOP PRODUCTS</span></h2><p>Ask us for current availability and pricing.</p></div>
+      <div class="products-toolbar"><span id="productCount">Showing products</span><button id="resetFilters" class="text-button">Clear filters ↻</button></div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>No products found. Try another search.</p>
+      <div class="center"><button class="btn btn-purple" id="showMore">VIEW MORE PRODUCTS ↓</button></div>
+    </section>
+
+    <section class="trust-strip" id="about">
+      <div><span class="trust-icon">🛡️</span><span><strong>QUALITY FIRST</strong><small>Products for your projects</small></span></div>
+      <div><span class="trust-icon">🏷️</span><span><strong>FAIR PRICES</strong><small>Ask for a quotation</small></span></div>
+      <div><span class="trust-icon">🚚</span><span><strong>DELIVERY OPTIONS</strong><small>Ask about availability</small></span></div>
+      <div><span class="trust-icon">🎧</span><span><strong>HELPFUL SUPPORT</strong><small>We are here to help</small></span></div>
+    </section>
+
+    <section class="section team-section" id="team">
+      <div class="section-heading"><p class="eyebrow">HERE TO HELP</p><h2>OUR <span>TEAM</span></h2><p>Replace these sample profiles with your real staff details.</p></div>
+      <div class="team-grid">
+        <article class="team-card"><div class="staff-avatar">👨🏻‍💼</div><h3>Manager Name</h3><p>Manager</p><a href="#contact">Contact team ↗</a></article>
+        <article class="team-card"><div class="staff-avatar">👨🏽‍💼</div><h3>Sales Executive</h3><p>Sales Executive</p><a href="#contact">Contact team ↗</a></article>
+        <article class="team-card"><div class="staff-avatar">👨🏼‍🔧</div><h3>Salesman Name</h3><p>Salesman</p><a href="#contact">Contact team ↗</a></article>
+        <article class="team-card"><div class="staff-avatar">👨🏾‍💼</div><h3>Salesman Name</h3><p>Salesman</p><a href="#contact">Contact team ↗</a></article>
+      </div>
+    </section>
+
+    <section class="section location-section" id="location">
+      <div class="section-heading"><p class="eyebrow">COME VISIT US</p><h2>OUR <span>LOCATION</span></h2><p>Map and exact address can be added when you share the store location.</p></div>
+      <div class="location-layout">
+        <div class="location-card"><span class="location-pin">📍</span><h3>Visit Best Smile</h3><p>Best Smile Building Materials Trading LLC</p><p>Dubai, United Arab Emirates</p><p class="muted">Exact shop address to be added.</p><a class="btn btn-yellow" id="mapLink" href="https://www.google.com/maps/search/?api=1&query=building+materials+Dubai" target="_blank" rel="noopener">OPEN GOOGLE MAPS ↗</a></div>
+        <div class="map-placeholder"><span>📍</span><strong>YOUR STORE LOCATION</strong><small>We’ll place the exact map here once you provide the address.</small></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="footer-grid">
+      <div class="footer-brand"><a class="brand footer-logo" href="#home"><span class="brand-mark">⌂</span><span><strong>BEST <b>SMILE</b></strong><small>BUILDING MATERIALS TRADING LLC</small></span></a><p>Your trusted partner for hardware and building materials.</p></div>
+      <div><h3>QUICK LINKS</h3><a href="#home">Home</a><a href="#about">About Us</a><a href="#products">Products</a><a href="#categories">Categories</a><a href="#location">Location</a></div>
+      <div><h3>PRODUCTS</h3><a href="#products">Power Tools</a><a href="#products">Hand Tools</a><a href="#products">Electrical Items</a><a href="#products">Plumbing Materials</a><a href="#products">Paints & Accessories</a></div>
+      <div><h3>CONTACT US</h3><p>☎ <span class="config-phone">Add phone number</span></p><p>◉ WhatsApp: <span class="config-phone">Add WhatsApp number</span></p><p>✉ <span class="config-email">Add business email</span></p><p>📍 Dubai, UAE</p></div>
+      <div><h3>FOLLOW US</h3><a href="#" class="social-link">🔵 Facebook</a><a href="#" class="social-link">🔴 YouTube</a><a href="#" class="social-link">🎵 TikTok</a><a href="#" class="social-link">🟣 Instagram</a></div>
+    </div>
+    <div class="copyright"><span>© <span id="year"></span> Best Smile Building Materials Trading LLC. All rights reserved.</span><a href="#home">Back to top ↑</a></div>
+  </footer>
+
+  <a class="floating-whatsapp" id="floatingWhatsApp" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">◉</a>
+</body>
+</html>
